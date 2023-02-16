@@ -12,4 +12,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.hero-slider__nav--prev',
   },
 });
-
