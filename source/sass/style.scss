@@ -1,0 +1,24 @@
+/* LIBRARIES */
+@import "libs/leaflet.scss";
+@import "libs/nouislider.scss";
+@import "libs/swiper-bundle.scss";
+
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+/* BLOCKS */
+@import "blocks/header/header.scss";
+@import "blocks/header/main-nav.scss";
+
+@import "blocks/main/hero-slider.scss";
+@import "blocks/main/advantages.scss";
+@import "blocks/main/catalogue.scss";
+@import "blocks/main/catalogue-filter.scss";
+@import "blocks/main/product-card.scss";
+@import "blocks/main/pagination.scss";
+@import "blocks/main/map.scss";
+
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/footer-nav.scss";

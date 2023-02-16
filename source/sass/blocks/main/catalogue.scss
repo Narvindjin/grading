@@ -1,0 +1,129 @@
+.catalogue {
+  background-color: $bg-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogue__container {
+  padding-top: 50px;
+  padding-bottom: 44px;
+  @include padding-side--small;
+  width: 100%;
+  box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    @include padding-side--large;
+    max-width: $desktop-width;
+  }
+}
+
+.catalogue__wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.catalogue__subtitle {
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @include font-700;
+  color: $primary;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0px;
+}
+
+.catalogue__title {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  margin-top: 0px;
+  margin-bottom: 21px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 4.2rem;
+    line-height: 6.4rem;
+    margin-bottom: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.catalogue__sorting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    margin-bottom: 30px;
+  }
+}
+
+.catalogue__sorting-label {
+  @include font-600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-right: 2px;
+}
+
+.catalogue__select {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  padding: 0px;
+  color: $primary;
+  text-align: end;
+  margin: 0;
+  margin-right: -10px;
+  @include font-600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  box-sizing: border-box;
+  width: fit-content;
+  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    margin-right: 0px;
+  }
+}
+
+.catalogue__select:hover {
+  @media (hover: hover) {
+    background-color: $secondary;
+  }
+}
+
+.catalogue__select:focus-visible {
+  outline: none;
+  background-color: $secondary;
+}
+
+.catalogue__products-container {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    grid-template-columns: 350px 350px;
+    width: auto;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 60px;
+  }
+}

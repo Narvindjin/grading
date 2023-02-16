@@ -1,0 +1,44 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $black;
+  font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main--fixed-header {
+  @media (max-width:$mobile-width-only) {
+    margin-top: 60px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}

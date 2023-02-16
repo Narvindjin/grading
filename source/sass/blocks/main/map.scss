@@ -1,0 +1,23 @@
+.map__canvas {
+  width: 100%;
+  height: 420px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media (min-width: $tablet-width) {
+    height: 480px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 540px;
+  }
+}
+
+.map--unloaded {
+  background-image: url(../../../img/map.png);
+  @media (min-width: $tablet-width) {
+    background-image: url(../../../img/map-md.png);
+  }
+  @media (min-width: $desktop-width) {
+    background-image: url(../../../img/map-lg.png);
+  }
+}
