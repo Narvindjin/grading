@@ -25,13 +25,13 @@
   }
 }
 
-.footer__logo--mobile {
+.footer__logo-mobile {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.footer__logo--tablet {
+.footer__logo-tablet {
   display: none;
 
   @media (min-width: $tablet-width) {

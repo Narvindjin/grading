@@ -1,6 +1,6 @@
-const unloadedMap = document.querySelector('.map--unloaded')
+const unloadedMap = document.querySelector('.map__canvas--unloaded')
 
-unloadedMap.classList.remove('map--unloaded')
+unloadedMap.classList.remove('map__canvas--unloaded')
 
 const map = L.map('map-canvas')
   .setView ([59.96840, 30.31740], 19);

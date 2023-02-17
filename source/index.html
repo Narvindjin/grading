@@ -19,13 +19,13 @@
     <nav class="main-nav">
       <div class="main-nav__logo-container">
         <span class="visually-hidden">Drink2Go</span>
-        <svg class="main-nav__logo--mobile" width="32" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-nav__logo-mobile" width="32" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <use href="img/icons/stack.svg#logo-sm"></use>
         </svg>
-        <svg class="main-nav__logo--tablet" width="82" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-nav__logo-tablet" width="82" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <use href="img/icons/stack.svg#logo-md"></use>
         </svg>
-        <svg class="main-nav__logo--desktop" width="170" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main-nav__logo-desktop" width="170" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
           <use href="img/icons/stack.svg#logo-lg"></use>
         </svg>
         <span class="main-nav__logo-text">Интернет-магазин кофейных напитков</span>
@@ -45,7 +45,7 @@
             </svg>
             <span class="main-nav__button-text">Корзина</span></a>
         </li>
-        <li class="main-nav__button-item main-nav__item--menu">
+        <li class="main-nav__button-item main-nav__item-menu">
           <a class="main-nav__menu main-nav__hide main-nav__button button" href="#">
             <svg class="main-nav__hide main-nav__close" width="12" height="12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use href="img/icons/stack.svg#cross"></use>
@@ -96,7 +96,7 @@
               что нужно для расслабления после тяжёлого рабочего дня</p>
             <div class="hero-slider__order-container">
               <p class="hero-slider__price">
-                <span class="hero-slider__price--old">295₽</span> 225₽
+                <span class="hero-slider__price-old">295₽</span> 225₽
               </p>
               <a class="hero-slider__order-button button" href="#">Заказать</a>
             </div>
@@ -120,7 +120,7 @@
               сиропом унесёт вас прямо на вершину Радужных гор</p>
             <div class="hero-slider__order-container">
               <p class="hero-slider__price">
-                <span class="hero-slider__price--old">285₽₽</span> 265₽
+                <span class="hero-slider__price-old">285₽₽</span> 265₽
               </p>
               <a class="hero-slider__order-button button" href="#">Заказать</a>
             </div>
@@ -144,7 +144,7 @@
               покажет вам, что такое настоящая бодрость</p>
             <div class="hero-slider__order-container">
               <p class="hero-slider__price">
-                <span class="hero-slider__price--old">395₽₽</span> 375₽
+                <span class="hero-slider__price-old">395₽₽</span> 375₽
               </p>
               <a class="hero-slider__order-button button" href="#">Заказать</a>
             </div>
@@ -429,7 +429,7 @@
                   <a class="pagination__link pagination__link--prev" href="#">
                     <!-- добавить класс pagination__link-hidden для скрытия элемента -->
                     <span class="pagination__text pagination__text--prev">Назад</span>
-                    <svg class="pagination__arrow--left" width="6" height="10" aria-hidden="true"
+                    <svg class="pagination__arrow-left" width="6" height="10" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <use href="img/icons/stack.svg#arrow"></use>
                     </svg>
@@ -453,7 +453,7 @@
                 <li class="pagination__item">
                   <a class="pagination__link pagination__link--next" href="#">
                     <span class="pagination__text pagination__text--next">Вперед</span>
-                    <svg class="pagination__arrow--right" width="6" height="10" aria-hidden="true"
+                    <svg class="pagination__arrow-right" width="6" height="10" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg">
                       <use href="img/icons/stack.svg#arrow"></use>
                     </svg>
@@ -467,7 +467,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
-      <div class="map__canvas map--unloaded" id="map-canvas"></div>
+      <div class="map__canvas map__canvas--unloaded" id="map-canvas"></div>
     </section>
   </main>
   <footer class="footer">
@@ -476,10 +476,10 @@
         <div class="footer__icons-container">
           <div class="footer__logo-container">
             <span class="visually-hidden">Drink2Go</span>
-            <svg class="footer__logo--mobile" width="82" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__logo-mobile" width="82" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use href="img/icons/stack.svg#logo-md"></use>
             </svg>
-            <svg class="footer__logo--tablet" width="170" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <svg class="footer__logo-tablet" width="170" height="36" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <use href="img/icons/stack.svg#logo-lg"></use>
             </svg>
             <span class="footer__logo-text">Интернет-магазин кофейных напитков</span>
@@ -547,11 +547,11 @@
             <h2 class="footer-nav__title footer-nav__title--contacts">Контакты</h2>
             <ul class="footer-nav__list">
               <li class="footer-nav__contacts-item">
-                <p class="footer-nav__contacts-text footer-nav__contacts--address">Санкт-Петербург, набережная реки
+                <p class="footer-nav__contacts-text footer-nav__contacts-text--address">Санкт-Петербург, набережная реки
                   Карповки, дом 5</p>
               </li>
               <li class="footer-nav__contacts-item">
-                <p class="footer-nav__contacts-text footer-nav__contacts--phone">+7 (999) 999-99-99</p>
+                <p class="footer-nav__contacts-text footer-nav__contacts-text--phone">+7 (999) 999-99-99</p>
               </li>
             </ul>
           </div>

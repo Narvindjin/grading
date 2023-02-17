@@ -14,7 +14,7 @@
   }
 }
 
-.map--unloaded {
+.map__canvas--unloaded {
   background-image: url("../../../img/map.png");
 
   @media (min-width: $tablet-width) {

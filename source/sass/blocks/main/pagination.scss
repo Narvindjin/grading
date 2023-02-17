@@ -94,7 +94,7 @@
   }
 }
 
-.pagination__arrow--left {
+.pagination__arrow-left {
   transform: rotate(180deg);
 
   @media (min-width: $tablet-width) {
@@ -102,7 +102,7 @@
   }
 }
 
-.pagination__arrow--right {
+.pagination__arrow-right {
   @media (min-width: $tablet-width) {
     display: none;
   }
