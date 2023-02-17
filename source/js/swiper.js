@@ -1,3 +1,5 @@
+import "../libs/swiper/swiper-bundle.js";
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,

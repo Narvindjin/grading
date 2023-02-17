@@ -3,14 +3,17 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
 }
+
 @mixin font-500 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
 }
+
 @mixin font-600 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
 }
+
 @mixin font-700 {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
@@ -33,26 +36,27 @@ $desktop-width-only: 1439px;
 $mobile-width-only: 767px;
 
 
-$white: #FFFFFF;
-$gray: #BDBDBD;
+$white: #ffffff;
+$gray: #bdbdbd;
 $black: #333333;
-$primary: #7859CF;
-$secondary: #F0EBFF;
+$primary: #7859cf;
+$secondary: #f0ebff;
 
 $primary--opaque: rgba(120, 89, 207, 0.25);
-$primary--light: #9070EC;
-$primary--dark: #593CAC;
-$gray--light: #E2E2E2;
+$primary--light: #9070ec;
+$primary--dark: #593cac;
+$gray--light: #e2e2e2;
 
-$bg-gray: #F8F8F8;
-$bg-beige: #F3EBE1;
-$bg-lavender: #EAE6FC;
-$bg-dark: #E5E6E8;
+$bg-gray: #f8f8f8;
+$bg-beige: #f3ebe1;
+$bg-lavender: #eae6fc;
+$bg-dark: #e5e6e8;
 
 @mixin padding-side--small {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 @mixin padding-side--large {
   padding-left: 40px;
   padding-right: 40px;

@@ -6,7 +6,8 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  @media (min-width:$tablet-width) {
+
+  @media (min-width: $tablet-width) {
     position: relative;
   }
 }

@@ -1,3 +1,4 @@
+import '../libs/nouislider/nouislider.js';
 const priceSlider = document.querySelector('.catalogue-filter__price-slider');
 const minPriceInput = document.querySelector('.catalogue-filter__price--min');
 const maxPriceInput = document.querySelector('.catalogue-filter__price--max');

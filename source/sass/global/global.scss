@@ -27,7 +27,7 @@ body {
 }
 
 .main--fixed-header {
-  @media (max-width:$mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     margin-top: 60px;
   }
 }

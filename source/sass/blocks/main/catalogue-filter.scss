@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-bottom: 34px;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -10,10 +11,11 @@
     padding-right: 34px;
     margin-bottom: 40px;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     margin-right: 30px;
     width: 318px;
   }
@@ -27,10 +29,12 @@
   margin-left: 8px;
   width: calc(100% - 8px);
   box-shadow: none;
+
   @media (min-width: $tablet-width) {
     width: 213px;
     margin-bottom: 32px;
   }
+
   @media (min-width: $desktop-width) {
     width: calc(100% - 8px);
   }
@@ -104,9 +108,11 @@
 .catalogue-filter__title {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  padding: 0px;
+  padding: 0;
+
   @include font-600;
   margin-bottom: 22px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
@@ -114,9 +120,11 @@
 
 .catalogue-filter__group--price {
   max-width: 280px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 100%;
   }
@@ -125,6 +133,7 @@
 .catalogue-filter__group--milk {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     margin-right: 15px;
   }
@@ -142,16 +151,18 @@
   margin-bottom: 23px;
   border: none;
   padding: 0;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
   }
 }
 
 .catalogue-filter__group:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .catalogue-filter__label {
@@ -160,11 +171,11 @@
   position: relative;
 }
 
-.catalogue-filter__radio:disabled+label {
+.catalogue-filter__radio:disabled + label {
   color: $gray;
 }
 
-.catalogue-filter__switch:disabled+label {
+.catalogue-filter__switch:disabled + label {
   color: $gray;
 }
 
@@ -198,14 +209,14 @@
   box-sizing: border-box;
   left: 0;
   bottom: 0;
-  content: ' ';
+  content: " ";
   cursor: pointer;
 }
 
 .catalogue-filter__radio:hover:not(:disabled) + .catalogue-filter__label--radio::before {
   @media (hover: hover) {
-  background-color: $primary--opaque;
-  outline-color: $primary;
+    background-color: $primary--opaque;
+    outline-color: $primary;
   }
 }
 
@@ -214,7 +225,7 @@
   outline-color: $primary;
 }
 
-.catalogue-filter__radio:focus-visible:not(:disabled) + .catalogue-filter__label--radio::before{
+.catalogue-filter__radio:focus-visible:not(:disabled) + .catalogue-filter__label--radio::before {
   background-color: $primary--opaque;
   outline-color: $primary;
 }
@@ -242,7 +253,7 @@
   bottom: 0;
   top: 0;
   margin: auto 0;
-  content: ' ';
+  content: " ";
   cursor: pointer;
 }
 
@@ -257,14 +268,14 @@
   bottom: 0;
   top: 0;
   margin: auto 0;
-  content: ' ';
+  content: " ";
   transition: 0.15s;
 }
 
 .catalogue-filter__switch:hover:not(:disabled) + .catalogue-filter__label--switch::before {
   @media (hover: hover) {
-  background-color: $primary--opaque;
-  border-color: $primary--light;
+    background-color: $primary--opaque;
+    border-color: $primary--light;
   }
 }
 
@@ -273,7 +284,7 @@
   border-color: $primary;
 }
 
-.catalogue-filter__switch:focus-visible:not(:disabled) + .catalogue-filter__label--switch::before{
+.catalogue-filter__switch:focus-visible:not(:disabled) + .catalogue-filter__label--switch::before {
   background-color: $primary--opaque;
   border-color: $primary--light;
 }
@@ -298,13 +309,14 @@
 
 .catalogue-filter__option {
   margin-bottom: 22px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }
 
 .catalogue-filter__option:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .catalogue-filter__option-country {
@@ -312,20 +324,22 @@
 }
 
 .catalogue-filter__option-country:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .catalogue-filter__button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-left: 180px;
     margin-bottom: 44px;
   }
+
   @media (min-width: $desktop-width) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -345,15 +359,17 @@
   margin-bottom: 24px;
   justify-content: center;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 1.4rem;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-right: 30px;
     min-height: 4rem;
     min-width: auto;
     padding-left: 3.5px;
     padding-right: 3.5px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 4.5px;
     padding-right: 4.5px;
@@ -377,13 +393,15 @@
   margin-bottom: 40px;
   justify-content: center;
   cursor: pointer;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     min-height: 4rem;
     min-width: auto;
     padding-left: 5.5px;
     padding-right: 5.5px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 11.5px;
     padding-right: 11.5px;
@@ -426,13 +444,16 @@
   box-sizing: border-box;
   padding: 7px 10px 7px 10px;
   text-align: center;
+
   @include font-500;
   font-size: 1.6rem;
   line-height: 2.4rem;
   appearance: textfield;
+
   @media (min-width: $tablet-width) {
     width: 93px;
   }
+
   @media (min-width: $desktop-width) {
     width: 134px;
   }
@@ -452,7 +473,7 @@
 .catalogue-filter__price::-webkit-outer-spin-button,
 .catalogue-filter__price::-webkit-inner-spin-button {
   appearance: none;
-  margin: 0px;
+  margin: 0;
 }
 
 
@@ -462,6 +483,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 280px;
+
   @media (min-width: $desktop-width) {
     max-width: 100%;
   }
@@ -469,13 +491,14 @@
 
 .catalogue-filter__price-line {
   width: 8px;
-  height: 0px;
+  height: 0;
   border-top: solid 1px $gray;
   border-bottom: solid 1px $gray;
   display: block;
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
+
   @media (min-width: $tablet-width) {
     width: 7px;
   }
@@ -483,6 +506,7 @@
 
 .catalogue-filter__title--price {
   margin-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     margin-left: -5px;
   }

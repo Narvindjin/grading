@@ -6,6 +6,7 @@
   max-width: 280px;
   margin: 0 auto 0 auto;
   padding: 0;
+
   @media (min-width: $tablet-width) {
     max-width: none;
     margin: 0;
@@ -37,7 +38,7 @@
 
 .pagination__item:last-child {
   @media (min-width: $tablet-width) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -52,13 +53,13 @@
 .pagination__link:active {
   background-color: $primary--dark;
   color: $white;
-    fill: $white;
+  fill: $white;
 }
 
 .pagination__link:focus-visible {
   background-color: $primary--light;
-    color: $white;
-    fill: $white;
+  color: $white;
+  fill: $white;
 }
 
 .pagination__link:disabled {
@@ -71,6 +72,7 @@
 .pagination__link--current {
   background-color: transparent;
   color: $black;
+
   @include font-600;
   pointer-events: none;
 }
@@ -94,6 +96,7 @@
 
 .pagination__arrow--left {
   transform: rotate(180deg);
+
   @media (min-width: $tablet-width) {
     display: none;
   }
